@@ -7,63 +7,14 @@
         <link rel="stylesheet" href="css/bootstrap.css" >
     </head>
     <body>
-        <div class="container">
-            <h1>React JS Radio Group Demo</h1>
-            <hr />
-            
-            <form>
-                <p class="h3">How did you hear about us?</p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="newspaper" >
-                        Newspaper
-                    </label>
-                </p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="radio" >
-                        Radio
-                    </label>
-                </p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="tv" >
-                        Television
-                    </label>
-                </p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="search" >
-                        Search Engine
-                    </label>
-                </p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="social" >
-                        Social Media
-                    </label>
-                </p>
-                
-                <p class="radio">
-                    <label>
-                        <input type="radio" name="referrer" value="other" >
-                        Other
-                    </label>
-                    <label class="form-inline">
-                        Please specify: <input class="form-control" type="text" />
-                    </label>
-                </p>
-                
-                <p>
-                    <input type="submit" class="btn btn-success" value="Submit" />
-                </p>
-            </form>
-            
-        </div>
+        <script src="js/react.js"></script>
+        <script src="js/react-dom.js"></script>
+        <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+        <script src="components/demo.jsx" type="text/jsx"></script>
+        
+        <script type="text/jsx">
+            var demo = React.createElement(Demo);
+            ReactDOM.render(demo, document.body);
+        </script>
     </body>
 </html>
