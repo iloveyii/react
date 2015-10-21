@@ -17,7 +17,7 @@ var Demo = React.createClass({
             <form>
                 <p className="h3">How did you hear about us?</p>
                 
-                <RadioOptionGroup />
+                <RadioOptionGroup options={radioOptions} />
                 
                 <p>
                     <input type="submit" className="btn btn-success" value="Submit" />
