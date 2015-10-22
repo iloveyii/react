@@ -1,4 +1,4 @@
-var Demo = React.createClass({
+var Form = React.createClass({
     
     render: function() {
         var radioOptions = [
@@ -17,7 +17,7 @@ var Demo = React.createClass({
             <form>
                 <p className="h3">How did you hear about us?</p>
                 
-                <RadioOptionGroup options={radioOptions} />
+                <RadioOptionGroup other={true} options={radioOptions} />
                 
                 <p>
                     <input type="submit" className="btn btn-success" value="Submit" />
